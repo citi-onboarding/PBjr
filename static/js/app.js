@@ -16,21 +16,7 @@ $('.menu-mobile nav a').click(function(){
 
 });
 
-var distanciaTopHeader = $("#sobre-nos").offset().top; //posição do topo inicial do objeto
-function smoothHeader() {
-	console.log(distanciaTopHeader);
-	console.log($(window).scrollTop())
-
-	if($(window).scrollTop() >= distanciaTopHeader) {
-		console.log("oi");
-		$("#header-smooth").fadeIn(3000);
-	}
-
-	else {
-		$("#header").removeClass("fixed");
-	}
-}
-
+	
 /* Função aprendida no curso de scrollSuave no vídeo gratuito disponibilizado no Youtube pelo
 canal Origamid */
 
@@ -49,7 +35,29 @@ function scrollSuave(){
 	});
 }
 
+function smoothHeader() {
+	
+	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		$('#header').addClass('on-scroll');
+		$('#header .logo-colorida').css('display', 'block');
+		$('#header .logo').css('display', 'none');
+		$('#header a').css('color', 'var(--preto)');
+		$('.icone-mobile i').css('color', 'var(--preto)');
+
+	} else {
+		$('#header').removeClass('on-scroll');
+		$('#header .logo').css('display', 'block');
+		$('#header .logo-colorida').css('display', 'none');
+		$('#header a').css('color', 'white');
+		$('.icone-mobile i').css('color', 'white');
+	}
+	
+}
+
 window.addEventListener('load', function() {
 	scrollSuave();
-	smoothHeader()
 });
+
+window.onscroll = function() { 
+	smoothHeader()
+ };
