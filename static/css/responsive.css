@@ -188,5 +188,616 @@
         align-items: center;
     }
 }
-    
-    
+
+/* ------ Medias Banner -------- */
+
+@media screen and (min-width: 320px){
+    .Espaço-título{
+        height: 100px;
+    }
+    .Espaço-título .Título{
+        width: 90%;
+        height: 100px;
+        font-size: 135%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 150px;
+        height: 45px;
+        top: 200px;
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 384px){
+    .Espaço-título{
+        height: 100px;
+    }
+    .Espaço-título .Título{
+        width: 90%;
+        height: 100px;
+        font-size: 135%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 150px;
+        height: 45px;
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 390px){
+    .Espaço-título{
+        height: 100px;
+    }
+    .Espaço-título .Título{
+        width: 90%;
+        height: 100px;
+        font-size: 135%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 150px;
+        height: 45px;
+        top: 225px;
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .Espaço-título .Título{
+        width: 90%;
+        font-size: 150%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 150px;
+        height: 45px;
+        font-size: 115%;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .Espaço-título .Título{
+        width: 90%;
+        font-size: 170%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 507px){
+    .Espaço-título .Título{
+        width: 90%;
+        font-size: 170%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 540px){
+    .Espaço-título .Título{
+        width: 90%;
+        font-size: 175%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 596px){
+    .Espaço-título .Título{
+        width: 80%;
+        font-size: 200%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 735px){
+    .Espaço-título .Título{
+        width: 80%;
+        font-size: 250%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        top: 275px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .Espaço-título .Título{
+        width: 75%;
+        font-size: 250%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        top: 275px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 808px){
+    .Espaço-título .Título{
+        width: 80%;
+        font-size: 275%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .Espaço-título .Título{
+        width: 75%;
+        font-size: 275%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        font-size: 150%;
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .Espaço-título .Título{
+        width: 75%;
+        font-size: 275%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 300px;
+        font-size: 150%;
+    }
+}
+@media screen and (min-width: 1080px){
+    .Espaço-título .Título{
+        width: 70%;
+        font-size: 300%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 325px;
+        font-size: 150%;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .Espaço-título .Título{
+        width: 60%;
+        font-size: 300%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 325px;
+        font-size: 150%;
+    }
+}
+@media screen and (min-width: 1440px){
+    .Espaço-título .Título{
+        width: 50%;
+        font-size: 300%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 350px;
+        font-size: 150%;
+    }
+}
+@media screen and (min-width: 1920px){
+    .Espaço-título .Título{
+        width: 50%;
+        font-size: 400%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 400px;
+        font-size: 150%;
+    }
+}   
+
+/*------ Chamada 1 ----------*/
+
+@media screen and (min-width: 320px){
+    .Texto-chamada1 .Texto{
+        width: 88%;
+        padding: 6%;
+    }
+    .Botão-chamada1{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .Botão-chamada1{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .Texto-chamada1 .Texto{
+        width: 88%;
+        padding: 6%;
+    }
+    .Botão-chamada1{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 960px){
+    .Chamada1{
+        height: 100px;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .Texto-chamada1{
+        width: 70%;
+    }
+    .Texto-chamada1 .Texto{
+        height: 40%;
+        padding: 0;
+        text-align: left;
+    }
+    .Texto-chamada1 .Texto h2{
+        padding: 0;
+        margin: 5px;
+    }
+    .Botão-chamada1{
+        width: 15%;
+        height: 40%;
+    }
+    .Botão-chamada1 h3{
+        padding: 0;
+        margin: 12px;
+    }
+}
+
+/*------ Chamada 2 ----------*/
+@media screen and (min-width: 320px){
+    .Texto-chamada2 .Texto{
+        width: 88%;
+        padding: 6%;
+    }
+    .Botão-chamada2{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 480px){
+    .Botão-chamada2{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .Texto-chamada2 .Texto{
+        width: 88%;
+        padding: 6%;
+    }
+    .Botão-chamada2{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 960px){
+    .Chamada2{
+        height: 100px;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .Texto-chamada2{
+        width: 70%;
+    }
+    .Texto-chamada2 .Texto{
+        height: 40%;
+        padding: 0;
+        text-align: left;
+    }
+    .Texto-chamada2 .Texto h2{
+        padding: 0;
+        margin: 5px;
+    }
+    .Botão-chamada2{
+        width: 15%;
+        height: 40%;
+    }
+    .Botão-chamada2 h3{
+        padding: 0;
+        margin: 12px;
+    }
+}
+
+/*------ Chamada 3 ----------*/ 
+@media screen and (min-width: 320px){
+    .Chamada3{
+        height: 300px;
+        flex-direction: column;
+    }
+    .Texto1-chamada3{
+        width: 70%;
+        height: 50px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 55%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 360px){
+    .Chamada3{
+        height: 300px;
+        flex-direction: column;
+    }
+    .Texto1-chamada3{
+        width: 60%;
+        height: 50px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 49%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 414px){
+    .Chamada3{
+        height: 300px;
+        flex-direction: column;
+    }
+    .Texto1-chamada3{
+        width: 60%;
+        height: 50px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 43%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 480px){
+    .Chamada3{
+        height: 300px;
+        flex-direction: column;
+    }
+    .Texto1-chamada3{
+        width: 50%;
+        height: 50px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 38%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px){
+    .Chamada3{
+        height: 300px;
+        flex-direction: column;
+    }
+    .Texto1-chamada3{
+        width: 30%;
+        height: 50px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 23%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 800px){
+    .Chamada3{
+        height: 300px;
+        flex-direction: column;
+    }
+    .Texto1-chamada3{
+        width: 26%;
+        height: 50px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 22%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 830px){
+    .Chamada3{
+        height: 300px;
+        flex-direction: column;
+    }
+    .Texto1-chamada3{
+        width: 26%;
+        height: 50px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 21%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 868px){
+    .Chamada3{
+        height: 300px;
+        flex-direction: column;
+    }
+    .Texto1-chamada3{
+        width: 26%;
+        height: 50px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 20%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 960px){
+    .Chamada3{
+        height: 100px;
+        flex-direction: row;
+    }
+    .Texto1-chamada3{
+        width: 22%;
+        height: 28px;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: right;
+    }
+    .Texto2-chamada3{
+        width: 19%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: right;
+    }   
+}
+@media screen and (min-width: 1000px){
+    .Chamada3{
+        height: 100px;
+        flex-direction: row;
+    }
+    .Texto1-chamada3{
+        width: 21%;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 18%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1100px){
+    .Chamada3{
+        height: 100px;
+        flex-direction: row;
+    }
+    .Texto1-chamada3{
+        width: 20%;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 17%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1160px){
+    .Chamada3{
+        height: 100px;
+        flex-direction: row;
+    }
+    .Texto1-chamada3{
+        width: 19%;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 16%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1260px){
+    .Chamada3{
+        height: 100px;
+        flex-direction: row;
+    }
+    .Texto1-chamada3{
+        width: 18%;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 15%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1300px){
+    .Chamada3{
+        height: 100px;
+        flex-direction: row;
+    }
+    .Texto1-chamada3{
+        width: 17%;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 14%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1440px){
+    .Chamada3{
+        height: 100px;
+        flex-direction: row;
+    }
+    .Texto1-chamada3{
+        width: 15%;
+    }
+    .Texto1-chamada3 .Texto1{
+        text-align: center;
+    }
+    .Texto2-chamada3{
+        width: 13%;
+    }
+    .Texto2-chamada3 .Texto2{
+        text-align: center;
+    }
+}
