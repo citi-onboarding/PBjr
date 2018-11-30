@@ -188,5 +188,227 @@
         align-items: center;
     }
 }
-    
+
+/* Medias Banner */ 
+@media screen and (min-width: 320px){
+    .Espaço-título{
+        height: 100px;
+    }
+    .Espaço-título .Título{
+        width: 90%;
+        height: 100px;
+        font-size: 135%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 150px;
+        height: 45px;
+        top: 200px;
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 384px){
+    .Espaço-título{
+        height: 100px;
+    }
+    .Espaço-título .Título{
+        width: 90%;
+        height: 100px;
+        font-size: 135%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 150px;
+        height: 45px;
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 390px){
+    .Espaço-título{
+        height: 100px;
+    }
+    .Espaço-título .Título{
+        width: 90%;
+        height: 100px;
+        font-size: 135%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 150px;
+        height: 45px;
+        top: 225px;
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .Espaço-título .Título{
+        width: 90%;
+        font-size: 150%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 150px;
+        height: 45px;
+        font-size: 115%;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .Espaço-título .Título{
+        width: 90%;
+        font-size: 170%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 507px){
+    .Espaço-título .Título{
+        width: 90%;
+        font-size: 170%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 540px){
+    .Espaço-título .Título{
+        width: 90%;
+        font-size: 175%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 596px){
+    .Espaço-título .Título{
+        width: 80%;
+        font-size: 200%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 735px){
+    .Espaço-título .Título{
+        width: 80%;
+        font-size: 250%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        top: 275px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .Espaço-título .Título{
+        width: 75%;
+        font-size: 250%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        top: 275px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 808px){
+    .Espaço-título .Título{
+        width: 80%;
+        font-size: 275%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 200px;
+        height: 60px;
+        font-size: 125%;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .Espaço-título .Título{
+        width: 75%;
+        font-size: 275%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        font-size: 150%;
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .Espaço-título .Título{
+        width: 75%;
+        font-size: 275%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 300px;
+        font-size: 150%;
+    }
+}
+@media screen and (min-width: 1080px){
+    .Espaço-título .Título{
+        width: 70%;
+        font-size: 300%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 325px;
+        font-size: 150%;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .Espaço-título .Título{
+        width: 60%;
+        font-size: 300%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 325px;
+        font-size: 150%;
+    }
+}
+@media screen and (min-width: 1440px){
+    .Espaço-título .Título{
+        width: 50%;
+        font-size: 300%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 350px;
+        font-size: 150%;
+    }
+}
+@media screen and (min-width: 1920px){
+    .Espaço-título .Título{
+        width: 50%;
+        font-size: 400%;
+    }
+    .Espaço-botão .Botão-banner{
+        width: 270px;
+        height: 60px;
+        top: 400px;
+        font-size: 150%;
+    }
+}   
     
