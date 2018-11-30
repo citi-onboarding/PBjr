@@ -35,16 +35,22 @@ body {
       #Header-Menu
 \*------------------------------------*/
 #header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     padding: 0;
     z-index: 5;
+    transition: 0.2s background-color ease-out;
 }
-#header .logo {
-  width: 100px;
+#header .logo,
+#header .logo-colorida {
+  width: 70px;
 }
 
-#header .logo img { width: 100%; }
+#header .logo-colorida { display: none; }
+
+#header .logo img,
+#header .logo-colorida img { width: 100%; }
+
 #header .container { 
   align-items: center;
   width: 90%;
@@ -74,10 +80,6 @@ body {
     border-bottom: 2px solid white;
 }
 
-
-/*.menu nav ul li:last-child:hover {
-   
-}*/
 .icone-mobile {
     display: flex;
     justify-content: flex-end;
@@ -90,12 +92,11 @@ body {
 
 .menu-mobile {
     background: var(--vermelho);
-    height: 170vh;
+    height: 200vh;
     display: none;
-    position: absolute;
-    top: 0;
+    position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 9;
 }
 .menu-mobile nav {
     width: 100%;
@@ -112,6 +113,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 0;
+    margin-top: 65px;
 }
 
 .menu-mobile nav ul li { 
@@ -124,6 +126,14 @@ body {
     font-size: 20pt;
     color: white;
     font-weight: 700;
+}
+
+.on-scroll {
+  background-color: white;
+  
+  -webkit-box-shadow: 2px -23px 87px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -23px 87px 1px rgba(0,0,0,0.75);
+    box-shadow: 2px -23px 87px 1px rgba(0,0,0,0.75); 
 }
 
 /*------------------------------------*\
@@ -998,134 +1008,133 @@ Conteúdo de eventos
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ############################################################################################################################# */
-
-/*.linha-do-tempo-horizontal {
-    position: relative;
+/*------------------------------------*\
+  #Footer-SEÇÃO
+\*------------------------------------*/
+
+footer {
+  background-color: var(--preto);
+  width: 100%;
 }
 
-.linha-do-tempo-horizontal .conteudo-eventos li {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    left: 0;
-    top: 0;
-    transform: translateX(-100%);
-    opacity: 0;
-    animation-duration: 0.4s;
-    animation-timing-function: ease-in-out;
+footer .primeira-linha {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 35px;
+}
+footer .redes-sociais {
+  display: flex;
+  width: 70%;
+}
+.coluna-1 {
+  margin-right: 170px;
+}
+footer .logo { width: 100px; }
+footer .logo img { width: 100%; }
+footer .rede {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
-.linha-do-tempo-horizontal .conteudo-eventos li.selected {
-    /* conteudo visivel 
-    position: relative;
-    z-index: 2;
-    opacity: 1;
-    transform: translateX(0);
+footer .rede img {
+  width: 20pt;
+  margin-right: 15px;
 }
 
-.linha-do-tempo-horizontal .conteudo-eventos li.enter-right, 
-.linha-do-tempo-horizontal .conteudo-eventos li.leave-right {
-  animation-name: cd-enter-right;
-}
-.linha-do-tempo-horizontal .conteudo-eventos li.enter-left, 
-.linha-do-tempo-horizontal .conteudo-eventos li.leave-left {
-  animation-name: cd-enter-left;
-}
-.linha-do-tempo-horizontal .conteudo-eventos li.leave-right, 
-.linha-do-tempo-horizontal .conteudo-eventos li.leave-left {
-  animation-direction: reverse;
+footer #local {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes cd-enter-right {
-    0% {
-      opacity: 0;
-      transform: translateX(100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-  }
-  @keyframes cd-enter-left {
-    0% {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
+footer .segunda-linha {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
-*/
+
+footer .segunda-linha .copyright {
+  text-align: center;
+}
+
+footer .segunda-linha .feito p {
+  display: flex;
+  align-items: center;
+}
+
+footer .segunda-linha .feito p span {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+footer .segunda-linha .feito p span img {
+  width: 15pt;
+}
+
+footer .segunda-linha .feito p span:last-child img {
+  width: 25pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

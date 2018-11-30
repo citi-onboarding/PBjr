@@ -104,9 +104,22 @@
     
 }
 
+@media(max-width: 910px) {
+    footer .redes-sociais { width: 80%; }
+    .coluna-1 { margin-right: 100px; }
+}
+
 @media(max-width: 850px) {
     .menu nav { display: none; }
     .menu .icone-mobile { display: block; }
+}
+
+@media(max-width: 810px) {
+    .primeira-linha {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media(max-width: 750px) {
@@ -118,6 +131,33 @@
 
     .formulario #informacoes-coluna { margin-right: 20px; }
 
+}
+
+@media(max-width: 696px){
+    footer .segunda-linha {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 650px) {
+    footer .redes-sociais {
+        flex-direction: column;
+        align-items: center;
+     }
+    
+     footer .segunda-linha { flex-direction: column; }
+
+     .coluna-1 {
+        margin-right: 0;
+        width: 100%;
+     }
+
+     .redes-sociais > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
 }
 
 @media(max-width: 500px){
@@ -459,7 +499,7 @@
         margin: 5px;
     }
     .Botão-chamada1{
-        width: 15%;
+        width: 10%;
         height: 40%;
     }
     .Botão-chamada1 h3{
@@ -512,7 +552,7 @@
         margin: 5px;
     }
     .Botão-chamada2{
-        width: 15%;
+        width: 10%;
         height: 40%;
     }
     .Botão-chamada2 h3{
