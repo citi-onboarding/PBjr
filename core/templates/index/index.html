@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/normalize.css' %}" />
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/responsive.css' %}" />
-
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick/slick.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick/slick-theme.css'%}">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href=" http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     
@@ -69,9 +70,7 @@
                 </div>              
             </div>
             <div class="Espaço-botão">
-                <div class="Botão-banner">
-                    <h3 style="margin-top: 15px;"><a href="#" style="color: white; text-decoration: none">CONHECER MAIS</a></h3>
-                </div>              
+                <div class="Botão-banner"><a href="#sobre-nos" style="color: white; text-decoration: none"> <h3 style="margin-top: 15px;">CONHECER MAIS</h3> </a></div>              
             </div>
         </div>
     </div>
@@ -152,7 +151,7 @@
             <div class="Texto-chamada1">
                 <div class="Texto"> <h2 style="margin-top: 0px;">CONHEÇA NOSSO PRODUTO DE SUPORTE</h2> </div>
             </div>
-            <div class="Botão-chamada1"> <h3><a href="#">CLIQUE AQUI</a></h3> </div>
+            <div class="Botão-chamada1"> <a href="#contato"> <h3>CLIQUE AQUI</h3> </a></div>
         </div>
     </body>
     <!-- =======================
@@ -171,7 +170,31 @@
             </div>
         </div>
     </div>
-
+    <!-- =======================
+        #Carrossel Ej's
+    ========================= -->
+    <div id="empresas-juniores">
+        <div class="Título-ejs"> <h2>[CONTRATE UMA EJ]</h2> </div>
+        <div class="Espaço-carrossel">
+            <div class="carrossel">
+                <div class="Espaço-img"><img src="static/imagens/eja.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/unisigma.jpg"></div>
+                <div class="Espaço-img"><img src="static/imagens/executive.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/eja.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/unisigma.jpg"></div>
+                <div class="Espaço-img"><img src="static/imagens/executive.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/eja.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/unisigma.jpg"></div>
+                <div class="Espaço-img"><img src="static/imagens/executive.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/eja.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/unisigma.jpg"></div>
+                <div class="Espaço-img"><img src="static/imagens/executive.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/eja.png"></div>
+                <div class="Espaço-img"><img src="static/imagens/unisigma.jpg"></div>
+                <div class="Espaço-img"><img src="static/imagens/executive.png"></div>
+            </div>
+        </div>
+    </div>
     <!-- =======================
         #Chamada 2
     ========================= -->
@@ -179,7 +202,7 @@
         <div class="Texto-chamada2">
             <div class="Texto"> <h2 style="margin-top: 0px;">CONHEÇA NOSSO PRODUTO DE EXPANSÃO</h2> </div>
         </div>
-        <div class="Botão-chamada2"> <h3><a href="#">CLIQUE AQUI</a></h3> </div>
+        <div class="Botão-chamada2"> <a href="#contato"> <h3>CLIQUE AQUI</h3> </a></div>
     </div>
      <!-- =======================
 		#Agenda
@@ -264,7 +287,7 @@
             <div class="Texto1"> <h2>APOIE A NOSSA REDE.</h2> </div>
         </div>
         <div class="Texto2-chamada3">
-            <div class="Texto2"> <h2><a href="#">SEJA UM PARCEIRO</a></h2> </div>
+            <a href="#contato"><div class="Texto2"> <h2>SEJA UM PARCEIRO</h2> </div></a>
         </div>  
     </div>
     <!-- =======================
@@ -289,12 +312,17 @@
         </div>
     </div>
 
-
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/carrossel.js'%}" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src=" {% static 'js/jquery-2.1.4.js' %}"></script>
 <script src="{% static 'js/jquery.mobile.custom.min.js' %}"></script>
 <script src="{% static 'js/linha-tempo.js' %}"></script> <!-- Resource jQuery -->
 <script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'slick/slick/slick.js'%}" type="text/javascript"></script>
 
 </body>
 </html>
