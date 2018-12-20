@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+     'storages',
     
 ]
 
@@ -127,3 +129,23 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+#Media files
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT  = os.path.join(os.path.dirname(BASE_DIR), 'media')
+
+#Email settings
+TEMPLATED_EMAIL_BACKEND = 'templated_email.backends.vanilla_django.TemplateBackend'
+# Use '' for top level template dir
+TEMPLATED_EMAIL_TEMPLATE_DIR = 'templated_email/'
+TEMPLATED_EMAIL_FILE_EXTENSION = 'email'
+
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'testedjangojr@gmail.com'
+EMAIL_HOST_PASSWORD = 'senhaDJANGO'
+
+# Configure Django App for Heroku.
+
+django_heroku.settings(locals())

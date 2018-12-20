@@ -22,13 +22,11 @@ canal Origamid */
 
 lastId = $('#sobre-nos');
 function scrollSuave(){
-	$('#header nav a').click(function(e){
+	$('#header a, .Botão-banner a, .botão-chamada a, .seja-parceiro a').click(function(e){
 		e.preventDefault();
 		var secaoId = $(this).attr('href'),
 			distanciaTopSecao = $(secaoId).offset().top,
 			menuHeight = $('#header').innerHeight();
-			console.log(secaoId);
-			console.log(distanciaTopSecao);
 		$('html, body').animate({
 			scrollTop: distanciaTopSecao - menuHeight //como coloca no topo a secao, o menu cobre, por isso subtrai a altura do menu
 		}, 500);
@@ -54,8 +52,27 @@ function smoothHeader() {
 	
 }
 
+function setarCampo() {
+
+
+	$('#suporte').click( function() {
+		$("#assunto-campo").val("[ Conhecer Produto de Suporte ]");
+	});
+
+	$('#expansao').click( function() {
+		$("#assunto-campo").val("[ Conhecer Produto de Expansão ]");
+	});
+
+	$('#ser-parceiro').click( function() {
+		$("#assunto-campo").val("[ Quero Ser um Parceiro ]");
+	});
+
+	
+}
+
 window.addEventListener('load', function() {
 	scrollSuave();
+	setarCampo();
 });
 
 window.onscroll = function() { 
