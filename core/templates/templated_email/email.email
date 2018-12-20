@@ -1,0 +1,16 @@
+{% block subject %} {{ assunto }} {% endblock %}
+
+{% block html %}
+<br>
+<b> Nome:</b> {{ nome }}
+<br>
+<b> Telefone:</b> {{ telefone }}
+<br>
+------------
+<br>
+<br>
+<b> Mensagem:</b> {{ mensagem }}
+
+<br>
+<b>Responder interessado: </b><a href="mailto:{{email}}">{{ email }}</a>
+{% endblock %}

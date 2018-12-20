@@ -131,14 +131,35 @@
 
     .formulario #informacoes-coluna { margin-right: 20px; }
 
+    #parceiros .arrows {
+        position: unset;
+        width: 83px;
+        margin-bottom: 14px;
+        margin-top: -4px;
+    }
+
+    #parceiros .slick-slider { margin-top: 0; }
+
+
 }
 
-@media(max-width: 696px){
+@media(max-width: 742px) {
+    #Seta-esquerda img { right: 53%; }
+    #Seta-direita img { right: 41%; }
+}
+
+@media(max-width: 696px) {
     footer .segunda-linha {
         flex-direction: column;
     }
 }
 
+@media(max-width: 690px) {
+    #Seta-esquerda img {
+        right: 53%;
+    }
+
+}
 @media(max-width: 650px) {
     footer .redes-sociais {
         flex-direction: column;
@@ -160,6 +181,65 @@
      }
 }
 
+@media(max-width: 626px) {
+
+    .chamada {
+        height: 164px;
+        padding-bottom: 20px;
+    }
+    .chamada .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .texto-chamada { 
+        width: 100%;
+        text-align: center;
+        font-size: 15pt;
+    }
+
+    #container-chamada .seja-parceiro h2 { font-size: 21pt; }
+}
+
+@media(max-width: 596px) {
+    .modal {
+        width: 456px;
+        height: 444px;
+    }
+
+    #modal-secao .descricao {
+        width: 425px;
+        font-size: 12pt;
+
+    }
+
+    #modal-secao .info-empresa .info { width: 425px; }
+    #modal-secao .info-empresa .info .icone { margin-right: 25px; }
+}
+
+@media(max-width: 575px) {
+    #Seta-direita img {
+        right: 38%;
+    }
+}
+
+@media(max-width: 524px) {
+    .modal {
+        width: 437px;
+        height: 463px;
+    }
+
+    #modal-secao .descricao {
+        width: 397px; 
+        margin-bottom: 8px;
+    }
+
+    #modal-secao .info-empresa .info { width: 396px; }
+
+    #modal-secao .info-empresa .info .icone { margin-right: 20px; }
+
+}
+
 @media(max-width: 500px){
     #sobre-nos .mvv-empresa .empresa, #nossa-historia { width: 350px; }
     #sobre-nos .mvv-empresa .empresa .icone {
@@ -171,9 +251,6 @@
         width: auto;
         padding: 15px;
     }
-
-   
-    
 }
 
 
@@ -186,6 +263,33 @@
     .texto-time { font-size: 18pt; }
 }
 
+@media(max-width: 490px) {
+    #Seta-direita img {
+        right: 30%;
+    }
+}
+
+@media(max-width: 475px) {
+    .modal {
+        width: 400px;
+        height: 500px;
+    }
+
+    #modal-secao .info-empresa .info:first-child { margin-bottom: 50px; }
+    #modal-secao .info-empresa .info { 
+        flex-direction: column;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    #modal-secao .info-empresa .info .icone { margin-right: initial; }
+    #modal-secao .info-empresa .info p {
+        width: 365px;
+        font-size: 9pt;
+        line-height: 17px;
+    }
+}
+
 @media(max-width: 454px){
     #nosso-time { height: 140vh; }
 }
@@ -195,6 +299,24 @@
     .cd-horizontal-timeline .events-content #info {
         width: 100%;
     }
+
+    .modal {
+        width: 341px;
+        height: 559px;
+    }
+
+    #modal-secao  .descricao { width: 351px; }
+
+    #modal-secao .info-empresa .info:first-child {
+        margin-bottom: 70px;
+    }
+
+    #modal-secao .info-empresa .info { width: 350px; }
+    #modal-secao .info-empresa .info p { width: 243px; }
+
+
+
+
 }
 
 @media(max-width: 415px){
@@ -202,12 +324,32 @@
     #sobre-nos .mvv-empresa .empresa .icone {
         left: 110px;
     }
+
+
     
 }
 
 @media(max-width: 380px) {
     .titulo h1 { font-size: 25pt; }
     .texto-time { font-size: 16pt; }
+    #parceiros .arrows {
+        margin-top: -10px;
+        margin-bottom: 18px;
+     }
+}
+
+@media(max-width: 375px) {
+    .modal {
+        width: 322px;
+        height: 578px;
+    }
+
+    #modal-secao .descricao {
+        width: 289px;
+        font-size: 11pt;
+    }
+
+    .chamada { padding-bottom: 28px; }
 }
 
 @media(max-width: 360px){
@@ -222,12 +364,28 @@
     
 }
 
+@media(max-width: 355px) {
+
+    .modal {
+        width: 300px;
+        height: 600px;
+    }
+    #modal-secao .info-empresa .info {
+        width: 290px;
+    }
+
+    #modal-secao .descricao { width: 265px; }
+}
+
 @media(max-width: 350px) {
     .cd-horizontal-timeline .events-content #info {
         flex-direction: column;
         align-items: center;
     }
 }
+
+
+
 
 /* ------ Medias Banner -------- */
 
@@ -453,397 +611,8 @@
     }
 }   
 
-/*------ Chamada 1 ----------*/
-
-@media screen and (min-width: 320px){
-    .Texto-chamada1 .Texto{
-        width: 88%;
-        padding: 6%;
-    }
-    .Botão-chamada1{
-        width: 40%;
-    }
-}
-
-@media screen and (min-width: 480px){
-    .Botão-chamada1{
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .Texto-chamada1 .Texto{
-        width: 88%;
-        padding: 6%;
-    }
-    .Botão-chamada1{
-        width: 30%;
-    }
-}
-@media screen and (min-width: 960px){
-    .Chamada1{
-        height: 100px;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-    .Texto-chamada1{
-        width: 70%;
-    }
-    .Texto-chamada1 .Texto{
-        height: 40%;
-        padding: 0;
-        text-align: left;
-    }
-    .Texto-chamada1 .Texto h2{
-        padding: 0;
-        margin: 5px;
-    }
-    .Botão-chamada1{
-        width: 10%;
-        height: 40%;
-    }
-    .Botão-chamada1 h3{
-        padding: 0;
-        margin: 12px;
-    }
-}
-
-/*------ Chamada 2 ----------*/
-@media screen and (min-width: 320px){
-    .Texto-chamada2 .Texto{
-        width: 88%;
-        padding: 6%;
-    }
-    .Botão-chamada2{
-        width: 40%;
-    }
-}
-@media screen and (min-width: 480px){
-    .Botão-chamada2{
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .Texto-chamada2 .Texto{
-        width: 88%;
-        padding: 6%;
-    }
-    .Botão-chamada2{
-        width: 30%;
-    }
-}
-@media screen and (min-width: 960px){
-    .Chamada2{
-        height: 100px;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-    .Texto-chamada2{
-        width: 70%;
-    }
-    .Texto-chamada2 .Texto{
-        height: 40%;
-        padding: 0;
-        text-align: left;
-    }
-    .Texto-chamada2 .Texto h2{
-        padding: 0;
-        margin: 5px;
-    }
-    .Botão-chamada2{
-        width: 10%;
-        height: 40%;
-    }
-    .Botão-chamada2 h3{
-        padding: 0;
-        margin: 12px;
-    }
-}
-
-/*------ Chamada 3 ----------*/ 
-@media screen and (min-width: 320px){
-    .Chamada3{
-        height: 300px;
-        flex-direction: column;
-    }
-    .Texto1-chamada3{
-        width: 70%;
-        height: 50px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 55%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 360px){
-    .Chamada3{
-        height: 300px;
-        flex-direction: column;
-    }
-    .Texto1-chamada3{
-        width: 60%;
-        height: 50px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 49%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 414px){
-    .Chamada3{
-        height: 300px;
-        flex-direction: column;
-    }
-    .Texto1-chamada3{
-        width: 60%;
-        height: 50px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 43%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 480px){
-    .Chamada3{
-        height: 300px;
-        flex-direction: column;
-    }
-    .Texto1-chamada3{
-        width: 50%;
-        height: 50px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 38%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 768px){
-    .Chamada3{
-        height: 300px;
-        flex-direction: column;
-    }
-    .Texto1-chamada3{
-        width: 30%;
-        height: 50px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 23%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 800px){
-    .Chamada3{
-        height: 300px;
-        flex-direction: column;
-    }
-    .Texto1-chamada3{
-        width: 26%;
-        height: 50px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 22%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 830px){
-    .Chamada3{
-        height: 300px;
-        flex-direction: column;
-    }
-    .Texto1-chamada3{
-        width: 26%;
-        height: 50px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 21%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 868px){
-    .Chamada3{
-        height: 300px;
-        flex-direction: column;
-    }
-    .Texto1-chamada3{
-        width: 26%;
-        height: 50px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 20%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 960px){
-    .Chamada3{
-        height: 100px;
-        flex-direction: row;
-    }
-    .Texto1-chamada3{
-        width: 22%;
-        height: 28px;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: right;
-    }
-    .Texto2-chamada3{
-        width: 19%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: right;
-    }   
-}
-@media screen and (min-width: 1000px){
-    .Chamada3{
-        height: 100px;
-        flex-direction: row;
-    }
-    .Texto1-chamada3{
-        width: 21%;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 18%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 1100px){
-    .Chamada3{
-        height: 100px;
-        flex-direction: row;
-    }
-    .Texto1-chamada3{
-        width: 20%;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 17%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 1160px){
-    .Chamada3{
-        height: 100px;
-        flex-direction: row;
-    }
-    .Texto1-chamada3{
-        width: 19%;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 16%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 1260px){
-    .Chamada3{
-        height: 100px;
-        flex-direction: row;
-    }
-    .Texto1-chamada3{
-        width: 18%;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 15%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 1300px){
-    .Chamada3{
-        height: 100px;
-        flex-direction: row;
-    }
-    .Texto1-chamada3{
-        width: 17%;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 14%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 1440px){
-    .Chamada3{
-        height: 100px;
-        flex-direction: row;
-    }
-    .Texto1-chamada3{
-        width: 15%;
-    }
-    .Texto1-chamada3 .Texto1{
-        text-align: center;
-    }
-    .Texto2-chamada3{
-        width: 13%;
-    }
-    .Texto2-chamada3 .Texto2{
-        text-align: center;
-    }
-}
-
 /* ------ Carrossel -------- */
-@media screen and (min-width: 1200px){
+/*@media screen and (min-width: 1200px){
     .carrossel{
         width: 80%;
         height: 200px;
@@ -870,4 +639,4 @@
         width: 100%;
         height: 180px;
     }
-}
+}*/

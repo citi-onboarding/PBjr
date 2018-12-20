@@ -1,10 +1,47 @@
 from django.shortcuts import render
+
 from django.utils import timezone
-from core.models import Evento
+from core.models import *
 from datetime import date
+
+#para formulario de contato
+from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy, resolve
+from templated_email import send_templated_mail
+
 
 def post_list(request):
     eventos = Evento.objects.all().order_by('dataEvento')
-    datasEventos = Evento.objects.all()[0].dataEvento
-    print(datasEventos)
-    return render(request, 'index/index.html', {'eventos': eventos})
+    parceiros = Parceiro.objects.all()
+    empresas = EmpresasJuniores.objects.all()
+    #datasEventos = Evento.objects.all()[0].dataEvento
+    #print(datasEventos)
+    print({'parceiros': parceiros})
+    return render(request, 'index/index.html', {'eventos': eventos, 'parceiros':parceiros, 'empresas':empresas })
+
+
+def ContactView(request):
+    if request.method == 'POST':
+        nome = request.POST.get('nome')
+        telefone = request.POST.get('telefone')
+        assunto = request.POST.get('assunto')
+        email = request.POST.get('email')
+        mensagem = request.POST.get('mensagem')
+
+        #print(name)
+        #print(email)
+        #print(mensagem)
+        send_templated_mail (
+            template_name='email',
+            from_email='email',
+            recipient_list=['lytamrp@gmail.com'],
+            context={
+                'nome': nome,
+                'telefone': telefone,
+                'assunto': assunto,
+                'email': email, 
+                'mensagem': mensagem,
+            }
+        )
+        return HttpResponseRedirect('/')
+    return render(request,'index/index.html',{})
