@@ -22,7 +22,7 @@ canal Origamid */
 
 lastId = $('#sobre-nos');
 function scrollSuave(){
-	$('#header a, .Botão-banner a, .chamada a, .seja-parceiro a, .logo a, .logo-colorida a').click(function(e){
+	$('#header a, .menu-mobile a, .Botão-banner a, .chamada a, .seja-parceiro a, .logo a, .logo-colorida a').click(function(e){
 		e.preventDefault();
 		var secaoId = $(this).attr('href'),
 			distanciaTopSecao = $(secaoId).offset().top,
