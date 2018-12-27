@@ -209,15 +209,22 @@ body {
   transition: 0.3s background-color ease-out;
 }
 .Botão-banner:hover{
-    background-color: white;
-    color: var(--vermelho);
+  background-color: white;
+  color: var(--vermelho);
 }
 .Botão-banner h3{
-  margin-top: 20;
+  margin-top: 0 !important;
   margin-bottom: 0;
 }
-.Botão-banner h3:hover{
+.Botão-banner:hover h3 {
   color: var(--vermelho);
+}
+.Botão-banner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 /*------------------------------------*\
   #Sobre Nós-SEÇÃO
@@ -347,6 +354,9 @@ body {
     font-family: 'BigNoodleTitling', sans-serif;
     width: 494px;
   }
+  .texto-chamada h2 {
+    font-weight: normal;
+  }
 
   .botão-chamada{
     font-family: 'BigNoodleTitling', sans-serif;
@@ -359,13 +369,13 @@ body {
     display: flex;
   }
 
-  .botão-chamada a { color: white; }
+  .botão-chamada-link { color: white; }
   .botão-chamada:hover{
     background-color: white;
     
   }
 
-  .botão-chamada:hover a { color: var(--preto); }
+  .botão-chamada-link:hover { color: var(--preto); }
   
   /*--Chamada de apoiar rede-- */
 
@@ -383,6 +393,7 @@ body {
     color: white;
     margin: 0;
     font-family: 'BigNoodleTitling', sans-serif;
+    font-weight: normal;
   }
 
 /*------------------------------------*\

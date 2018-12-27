@@ -22,14 +22,14 @@ canal Origamid */
 
 lastId = $('#sobre-nos');
 function scrollSuave(){
-	$('#header a, .Botão-banner a, .botão-chamada a, .seja-parceiro a').click(function(e){
+	$('#header a, .Botão-banner a, .chamada a, .seja-parceiro a, .logo a, .logo-colorida a').click(function(e){
 		e.preventDefault();
 		var secaoId = $(this).attr('href'),
 			distanciaTopSecao = $(secaoId).offset().top,
 			menuHeight = $('#header').innerHeight();
 		$('html, body').animate({
-			scrollTop: distanciaTopSecao - menuHeight //como coloca no topo a secao, o menu cobre, por isso subtrai a altura do menu
-		}, 500);
+			scrollTop: distanciaTopSecao - menuHeight + 1 //como coloca no topo a secao, o menu cobre, por isso subtrai a altura do menu
+		}, 800);
 	});
 }
 
@@ -56,15 +56,15 @@ function setarCampo() {
 
 
 	$('#suporte').click( function() {
-		$("#assunto-campo").val("[ Conhecer Produto de Suporte ]");
+		$("#assunto-campo").val("[ Produto de Suporte ]");
 	});
 
 	$('#expansao').click( function() {
-		$("#assunto-campo").val("[ Conhecer Produto de Expansão ]");
+		$("#assunto-campo").val("[ Produto de Expansão ]");
 	});
 
 	$('#ser-parceiro').click( function() {
-		$("#assunto-campo").val("[ Quero Ser um Parceiro ]");
+		$("#assunto-campo").val("[ Quero ser um Parceiro ]");
 	});
 
 	
