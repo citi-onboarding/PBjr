@@ -27,7 +27,7 @@ body {
 
 .titulo h1 {
     font-family: "BigNoodleTitling", sans-serif;
-    font-size: 35pt;
+    font-size: 32pt;
     letter-spacing: 2px;
 }
 
@@ -184,6 +184,10 @@ body {
   z-index: 4;
 }
 
+.Espaço-título .Título h2 {
+  font-weight: normal;
+}
+
 .Espaço-botão{
   width: 100%;
   height: 78px;
@@ -209,15 +213,23 @@ body {
   transition: 0.3s background-color ease-out;
 }
 .Botão-banner:hover{
-    background-color: white;
-    color: var(--vermelho);
+  background-color: white;
+  color: var(--vermelho);
 }
 .Botão-banner h3{
-  margin-top: 20;
+  margin-top: 0 !important;
   margin-bottom: 0;
+  font-weight: normal;
 }
-.Botão-banner h3:hover{
+.Botão-banner:hover h3 {
   color: var(--vermelho);
+}
+.Botão-banner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 /*------------------------------------*\
   #Sobre Nós-SEÇÃO
@@ -232,6 +244,10 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+}
+
+#sobre-nos .titulo h1 {
+  margin-bottom: 45px;
 }
 
 #sobre-nos .mvv-empresa .empresa {
@@ -347,6 +363,9 @@ body {
     font-family: 'BigNoodleTitling', sans-serif;
     width: 494px;
   }
+  .texto-chamada h2 {
+    font-weight: normal;
+  }
 
   .botão-chamada{
     font-family: 'BigNoodleTitling', sans-serif;
@@ -359,13 +378,13 @@ body {
     display: flex;
   }
 
-  .botão-chamada a { color: white; }
+  .botão-chamada-link { color: white; }
   .botão-chamada:hover{
     background-color: white;
     
   }
 
-  .botão-chamada:hover a { color: var(--preto); }
+  .botão-chamada-link:hover { color: var(--preto); }
   
   /*--Chamada de apoiar rede-- */
 
@@ -383,6 +402,7 @@ body {
     color: white;
     margin: 0;
     font-family: 'BigNoodleTitling', sans-serif;
+    font-weight: normal;
   }
 
 /*------------------------------------*\
@@ -397,7 +417,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
-  
+    box-sizing: border-box;
 }
 
 #nosso-time .titulo h1, 
@@ -419,7 +439,7 @@ body {
 \*------------------------------------*/
 #empresas-juniores{
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 .Título-ejs{
   width: 100%;
@@ -471,6 +491,7 @@ body {
   margin-bottom: 20px;
   top: -65px;
   right: 60px;
+  cursor: pointer;
 }
 #Seta-direita img{
   width: 35px;
@@ -479,6 +500,7 @@ body {
   margin-bottom: 20px;
   top:-65px;
   right: 0;
+  cursor: pointer;
 }
 .slick-dots li{
   width: 30px !important;
@@ -512,7 +534,7 @@ body {
 #parceiros {
   background-color: var(--vermelho);
   position: relative;
-  padding-bottom: 45px;
+  padding-bottom: 70px;
   padding-top: 40px;
 }
 
@@ -559,7 +581,7 @@ body {
 
 #contato {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 .formulario {
     display:flex;
@@ -581,7 +603,10 @@ body {
     width: 100%;
 }
 
-.formulario textarea { height: 20vh; }
+.formulario textarea { 
+  height: 20vh;
+  resize: none; 
+}
 
 .formulario #informacoes-coluna > div input, .formulario > input, .formulario textarea {
     border: 1px solid var(--vermelho);
@@ -596,7 +621,6 @@ body {
 }
 
 .formulario #informacoes-coluna > div input:focus, .formulario > input:focus, .formulario textarea:focus {
-    border: 2px solid var(--vermelho);
     outline: none;    
 }
 
@@ -955,7 +979,7 @@ Conteúdo de eventos
   .cd-horizontal-timeline .events-content .text p {
     font-size: 15pt;
     color: var(--preto);
-    
+    word-break: break-all;
   }
   .cd-horizontal-timeline .events-content div span, .cd-horizontal-timeline .events-content .text p {
     line-height: 1.6;
