@@ -1072,21 +1072,35 @@ footer {
   width: 100%;
 }
 
+footer .logo-imagem {
+  display: flex;
+  justify-content: center;
+}
+
+footer .logo-imagem .logo {
+  width: 200px;
+}
+
 footer .primeira-linha {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 35px;
 }
+
 footer .redes-sociais {
   display: flex;
   width: 70%;
 }
+
 .coluna-1 {
   margin-right: 170px;
 }
+
 footer .logo { width: 100px; }
+
 footer .logo img { width: 100%; }
+
 footer .rede {
   color: white;
   display: flex;
