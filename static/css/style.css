@@ -57,18 +57,18 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu nav ul {
+#header nav ul {
     display: flex;
     justify-content: flex-end;
 }
 
-.menu nav ul li { 
+#header nav ul li { 
     margin-right: 5px;
     padding: 5px;
     text-align: center;
 }
 
-.menu nav ul li a {
+#header nav ul li a {
     font-size: 18pt;
     text-transform: uppercase;
     color: white;
@@ -76,19 +76,22 @@ body {
     font-family: "BigNoodleTitling";
 }
 
-.menu nav ul li a:hover {
+#header nav ul li a:hover {
     border-bottom: 2px solid white;
 }
 
-.icone-mobile {
-    display: flex;
-    justify-content: flex-end;
-    display: none;
+#header .menu-movel {
+  display: none;
+  width: 37px;
 }
-.icone-mobile i {
-    font-size: 40pt;
-    color: white;
+
+#header .menu-movel i {
+  color: white;
+  font-size: 28pt;
 }
+
+
+
 
 .menu-mobile {
     background: var(--vermelho);
@@ -117,7 +120,7 @@ body {
 }
 
 .menu-mobile nav ul li { 
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     width: 100%;
     
  }
@@ -136,6 +139,18 @@ body {
     box-shadow: 2px -23px 87px 1px rgba(0,0,0,0.75); 
 }
 
+.menu-mobile #fechar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 42px;
+  width: 30px
+}
+
+.menu-mobile #fechar img {
+  width: 25px;
+}
 /*------------------------------------*\
   #Banner-SEÇÃO
 \*------------------------------------*/

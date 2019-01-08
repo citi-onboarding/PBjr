@@ -1,11 +1,11 @@
 
 
-$('.icone-mobile').click(function(){
+$('.menu-movel, .menu-movel2').click(function(){
     $('.menu-mobile').slideToggle( "slow" );
 
 });
 
-$('.menu-mobile i').click(function(){
+$('.menu-mobile #fechar').click(function(){
     $('.menu-mobile').slideToggle( "slow" );
 
 });
@@ -40,16 +40,17 @@ function smoothHeader() {
 		$('#header .logo-colorida').css('display', 'block');
 		$('#header .logo').css('display', 'none');
 		$('#header a').css('color', 'var(--preto)');
-		$('.icone-mobile i').css('color', 'var(--preto)');
-
-	} else {
+		$('.menu-movel i').css('color', 'var(--preto)');
+	
+	} 
+	
+	else {
 		$('#header').removeClass('on-scroll');
 		$('#header .logo').css('display', 'block');
 		$('#header .logo-colorida').css('display', 'none');
 		$('#header a').css('color', 'white');
-		$('.icone-mobile i').css('color', 'white');
+		$('.menu-movel i').css('color', 'white');
 	}
-	
 }
 
 function setarCampo() {
