@@ -110,8 +110,8 @@
 }
 
 @media(max-width: 850px) {
-    .menu nav { display: none; }
-    .menu .icone-mobile { display: block; }
+    #header nav { display: none; }
+    #header .menu-movel { display: block; }
 }
 
 @media(max-width: 810px) {
