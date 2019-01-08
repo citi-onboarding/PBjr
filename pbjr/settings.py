@@ -105,9 +105,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-dbx = dropbox.Dropbox ('P-DMhRXchXAAAAAAAAAAC8O1yV4Ta9-DDyyoxfuXMpw-xwHFrMtVzqvipdQkQjML')
-DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -153,3 +150,6 @@ EMAIL_HOST_PASSWORD = 'federacao@2019'
 # Configure Django App for Heroku.
 
 django_heroku.settings(locals())
+
+DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+DROPBOX_OAUTH2_TOKEN = 'P-DMhRXchXAAAAAAAAAAC8O1yV4Ta9-DDyyoxfuXMpw-xwHFrMtVzqvipdQkQjML'
