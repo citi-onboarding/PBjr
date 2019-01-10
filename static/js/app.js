@@ -11,7 +11,7 @@ $('.menu-mobile #fechar').click(function(){
 });
 
 $('.menu-mobile nav a').click(function(){
-	console.log('oi');
+	
     $('.menu-mobile').slideToggle( "slow" );
 
 });
