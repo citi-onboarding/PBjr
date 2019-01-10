@@ -11,8 +11,14 @@ $('.menu-mobile #fechar').click(function(){
 });
 
 $('.menu-mobile nav a').click(function(){
-	console.log('oi');
+	
     $('.menu-mobile').slideToggle( "slow" );
+
+});
+
+$('#modal-secao').click(function(){
+	console.log('oi');
+    $('#modal-secao').fadeOut( "slow");
 
 });
 
@@ -70,6 +76,18 @@ function setarCampo() {
 
 	
 }
+
+$('.imagem-empresa').click(function(e) {
+	$('#modal-secao').css('display', 'block');
+	const infos = ['logo', 'email', 'descricao', 'site', 'local'];
+	infos.forEach(function(info){
+		if(info === 'logo') {
+			$(`#${info}-empresa-junior`).attr('src', e.target.getAttribute(`data-${info}`));
+			return ;
+		}
+		$(`#${info}-empresa-junior`).html(e.target.getAttribute(`data-${info}`));
+	});
+});
 
 window.addEventListener('load', function() {
 	scrollSuave();

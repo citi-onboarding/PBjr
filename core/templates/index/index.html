@@ -191,8 +191,9 @@
 
                     {% for empresa in empresas %}
                         <div>
-                            <div class="imagem">
-                                <img src="{{ empresa.logoEmpresa.url }}">
+                            <div class="imagem imagem-empresa">
+                                <img src="{{ empresa.logoEmpresa.url }}" data-logo="{{empresa.logoEmpresa.url}}" data-descricao="{{empresa.descricaoEmpresa}}" 
+                                data-local="{{empresa.localEmpresa}}" data-site="{{empresa.siteEmpresa}}" data-email="{{empresa.emailEmpresa}}">
                             </div>
                             
                         </div>
@@ -440,11 +441,11 @@
         <div class="container">
             <div class="modal">
                 <div class="logo-ej">
-                    <img src="{% static 'imagens/eja.png' %}">
+                    <img src="{% static 'imagens/eja.png' %}"  id="logo-empresa-junior">
                 </div>
 
-                <div class="descricao">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <div class="descricao" >
+                    <p id="descricao-empresa-junior">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
                 </div>
 
@@ -455,7 +456,7 @@
                             <img src="{% static 'imagens/location.svg' %}">
                         </div>
                         
-                       <p>UFPB – Campus I Centro de Ciências Sociais Aplicadas Bloco dos Centro Acadêmicos Sala 
+                       <p id="local-empresa-junior">UFPB – Campus I Centro de Ciências Sociais Aplicadas Bloco dos Centro Acadêmicos Sala 
                        da EJA Consultoria 1o Andar João Pessoa/PB – CEP: 58050-725</p>
                     </div>
 
@@ -463,14 +464,14 @@
                         <div class="icone">
                             <img src="{% static 'imagens/icones/language.svg' %}">
                         </div>
-                        <p>www.ejaconsultoria.com.br</p>
+                        <p id="site-empresa-junior">www.ejaconsultoria.com.br</p>
                     </div>
 
                     <div class="info">
                         <div class="icone">
                             <img src="{% static 'imagens/message.svg' %}">
                         </div>
-                        <p>contato@gmail.com</p>
+                        <p id="email-empresa-junior">contato@gmail.com</p>
                     </div>
                     
                 </div>
