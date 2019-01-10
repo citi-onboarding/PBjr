@@ -16,6 +16,12 @@ $('.menu-mobile nav a').click(function(){
 
 });
 
+$('#modal-secao').click(function(){
+	console.log('oi');
+    $('#modal-secao').fadeOut( "slow");
+
+});
+
 	
 /* Função aprendida no curso de scrollSuave no vídeo gratuito disponibilizado no Youtube pelo
 canal Origamid */
@@ -70,6 +76,18 @@ function setarCampo() {
 
 	
 }
+
+$('.imagem-empresa').click(function(e) {
+	$('#modal-secao').css('display', 'block');
+	const infos = ['logo', 'email', 'descricao', 'site', 'local'];
+	infos.forEach(function(info){
+		if(info === 'logo') {
+			$(`#${info}-empresa-junior`).attr('src', e.target.getAttribute(`data-${info}`));
+			return ;
+		}
+		$(`#${info}-empresa-junior`).html(e.target.getAttribute(`data-${info}`));
+	});
+});
 
 window.addEventListener('load', function() {
 	scrollSuave();

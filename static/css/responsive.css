@@ -204,7 +204,7 @@
 @media(max-width: 596px) {
     .modal {
         width: 456px;
-        height: 444px;
+        height: auto;
     }
 
     #modal-secao .descricao {
@@ -226,7 +226,7 @@
 @media(max-width: 524px) {
     .modal {
         width: 437px;
-        height: 463px;
+        
     }
 
     #modal-secao .descricao {
@@ -272,7 +272,7 @@
 @media(max-width: 475px) {
     .modal {
         width: 400px;
-        height: 500px;
+      
     }
 
     #modal-secao .info-empresa .info:first-child { margin-bottom: 50px; }
@@ -316,7 +316,7 @@
 
     .modal {
         width: 341px;
-        height: 559px;
+      
     }
 
     #modal-secao  .descricao { width: 351px; }
@@ -328,6 +328,9 @@
     #modal-secao .info-empresa .info { width: 350px; }
     #modal-secao .info-empresa .info p { width: 243px; }
 
+    #modal-secao .descricao #descricao-empresa-junior {
+        padding: 12px;
+    }
 
 
 
@@ -354,7 +357,7 @@
 @media(max-width: 375px) {
     .modal {
         width: 322px;
-        height: 578px;
+      
     }
 
     #modal-secao .descricao {
@@ -381,7 +384,7 @@
 
     .modal {
         width: 300px;
-        height: 600px;
+       
     }
     #modal-secao .info-empresa .info {
         width: 290px;
@@ -624,32 +627,3 @@
     }
 }   
 
-/* ------ Carrossel -------- */
-/*@media screen and (min-width: 1200px){
-    .carrossel{
-        width: 80%;
-        height: 200px;
-    }
-    .Espaço-img{
-        width: 180px;
-        height: 200px;
-    }
-    .carrossel img{
-        width: 100%;
-        height: 200px;
-    }
-}
-@media screen and (min-width: 1000px){
-    .carrossel{
-        width: 80%;
-        height: 180px;
-    }
-    .Espaço-img{
-        width: 180px;
-        height: 180px;
-    }
-    .carrossel img{
-        width: 100%;
-        height: 180px;
-    }
-}*/

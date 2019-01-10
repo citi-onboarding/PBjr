@@ -493,6 +493,10 @@ body {
   align-items: center;
 }
 
+#empresas-juniores .slick-slide .imagem:hover {
+  cursor: pointer;
+}
+
 #empresas-juniores .slick-slide img {
   width: 100%;
   height: 100%;
@@ -1170,18 +1174,28 @@ footer .segunda-linha .feito p span:last-child img {
 
 #modal-secao {
   background-color: rgba(1,1,1,0.4);
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 105px;
+  padding-top: 35px;
   width: 100%;
+  display: none;
+  position: fixed;
+  top:0;
+  right: 0;
+  height: 100vh;
+  z-index: 9;
+  transition: 0.3s all ease-out;
+  overflow: overlay;
 }
 
 .modal {
   background-color: white;
   width: 500px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
+ 
 }
 
 
@@ -1194,6 +1208,7 @@ footer .segunda-linha .feito p span:last-child img {
 #modal-secao  .logo-ej {
   width: 150px;
   height: 150px;
+  margin-top: 20px;
 }
 
 
@@ -1206,7 +1221,7 @@ footer .segunda-linha .feito p span:last-child img {
   justify-content: space-between;
 }
 
-#modal-secao .info-empresa .info:first-child { text-align: center; }
+
 
 #modal-secao .info-empresa .info .icone {
   width: 25px;
@@ -1222,7 +1237,7 @@ footer .segunda-linha .feito p span:last-child img {
 #modal-secao .descricao {
   text-align: center;
   width: 451px;
-  margin-top: -28px;
+  margin-top: 11px;
   line-height: 25px;
 
 }

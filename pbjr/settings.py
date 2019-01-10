@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-     'storages',
+    'storages',
     
 ]
 
@@ -150,6 +150,7 @@ EMAIL_HOST_PASSWORD = 'federacao@2019'
 # Configure Django App for Heroku.
 
 django_heroku.settings(locals())
+
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
 DROPBOX_OAUTH2_TOKEN = 'P-DMhRXchXAAAAAAAAAAC8O1yV4Ta9-DDyyoxfuXMpw-xwHFrMtVzqvipdQkQjML'
