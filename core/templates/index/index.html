@@ -254,7 +254,9 @@
                         {% if forloop.first %}
                             <li class="selected" data-date="{{ evento.dataEvento.day|stringformat:"02d"}}/{{ evento.dataEvento.month|stringformat:"02d"}}/{{ evento.dataEvento.year }}">
                             <div class="container">
+                                {% if evento.imagem %}
                                 <div class="image"><img src="{{ evento.imagem.url }}" ></div>
+                                {% endif %}
                                 <div id="info">
                                     <span>{{ evento.nomeEvento }}</span>
                                     <span>{{ evento.dataEvento.day|stringformat:"02d"}}/{{ evento.dataEvento.month|stringformat:"02d"}}/{{ evento.dataEvento.year }}</span>
@@ -269,7 +271,9 @@
                         {% else %}
                             <li data-date="{{ evento.dataEvento.day|stringformat:"02d"}}/{{ evento.dataEvento.month|stringformat:"02d"}}/{{ evento.dataEvento.year }}">
                             <div class="container">
+                                {% if evento.imagem %}
                                 <div class="image"><img src="{{ evento.imagem.url }}" ></div>
+                                {% endif %}
                                 <div id="info">
                                     <span>{{ evento.nomeEvento }}</span>
                                     <span>{{ evento.dataEvento }}</span>
@@ -315,7 +319,7 @@
                 
                 {% for parceiro in parceiros %}
 
-                    <a class="parceiro" href="{{ parceiro.url }}" target="__blank">
+                    <a class="parceiro" {% if parceiro.url %} href="{{ parceiro.url }}" {% endif %} target="__blank">
                          <img src="{{ parceiro.logoEmpresa.url }}">
                     </a>
 
