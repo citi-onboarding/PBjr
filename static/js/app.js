@@ -11,15 +11,12 @@ $('.menu-mobile #fechar').click(function(){
 });
 
 $('.menu-mobile nav a').click(function(){
-	
     $('.menu-mobile').slideToggle( "slow" );
 
 });
 
 $('#modal-secao').click(function(){
-	console.log('oi');
-    $('#modal-secao').fadeOut( "slow");
-
+    $('#modal-secao').fadeOut(250);
 });
 
 	
