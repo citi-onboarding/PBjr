@@ -14,10 +14,7 @@
     <link rel="icon" href="{% static 'imagens/icone-pb.png' %}">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-
-    
-    
+    <meta name="theme-color" content="#A9303E" />    
 </head>
 <body>
 	<!-- =======================
@@ -257,7 +254,9 @@
                         {% if forloop.first %}
                             <li class="selected" data-date="{{ evento.dataEvento.day|stringformat:"02d"}}/{{ evento.dataEvento.month|stringformat:"02d"}}/{{ evento.dataEvento.year }}">
                             <div class="container">
+                                {% if evento.imagem %}
                                 <div class="image"><img src="{{ evento.imagem.url }}" ></div>
+                                {% endif %}
                                 <div id="info">
                                     <span>{{ evento.nomeEvento }}</span>
                                     <span>{{ evento.dataEvento.day|stringformat:"02d"}}/{{ evento.dataEvento.month|stringformat:"02d"}}/{{ evento.dataEvento.year }}</span>
@@ -272,7 +271,9 @@
                         {% else %}
                             <li data-date="{{ evento.dataEvento.day|stringformat:"02d"}}/{{ evento.dataEvento.month|stringformat:"02d"}}/{{ evento.dataEvento.year }}">
                             <div class="container">
+                                {% if evento.imagem %}
                                 <div class="image"><img src="{{ evento.imagem.url }}" ></div>
+                                {% endif %}
                                 <div id="info">
                                     <span>{{ evento.nomeEvento }}</span>
                                     <span>{{ evento.dataEvento }}</span>
@@ -318,7 +319,7 @@
                 
                 {% for parceiro in parceiros %}
 
-                    <a class="parceiro" href="{{ parceiro.url }}" target="__blank">
+                    <a class="parceiro" {% if parceiro.url %} href="{{ parceiro.url }}" {% endif %} target="__blank">
                          <img src="{{ parceiro.logoEmpresa.url }}">
                     </a>
 

@@ -5,7 +5,7 @@ import os
 class Evento(models.Model):
     imagem = models.ImageField(upload_to='eventos', blank=True)
     nomeEvento = models.CharField(max_length=200)
-    dataEvento = models.DateField(blank=True, null=True)
+    dataEvento = models.DateField()
     descricao = models.TextField()
 
     class Meta:
@@ -18,8 +18,8 @@ class Evento(models.Model):
 
 class Parceiro(models.Model):
     nome = models.CharField(default="", max_length=200)
-    logoEmpresa = models.ImageField(upload_to='parceiros', blank=True)
-    url = models.URLField(max_length=250, default="")
+    logoEmpresa = models.ImageField(upload_to='parceiros')
+    url = models.URLField(max_length=250, default="", blank=True)
     
 
     class Meta:
@@ -33,7 +33,7 @@ class Parceiro(models.Model):
 class EmpresasJuniores(models.Model):
 
     nome =  models.CharField(default="", max_length=200)
-    logoEmpresa = models.ImageField(upload_to='empresasJuniores', blank=True)
+    logoEmpresa = models.ImageField(upload_to='empresasJuniores')
     descricaoEmpresa = models.TextField(max_length=250)
     localEmpresa = models.CharField(max_length=200)
     siteEmpresa = models.CharField(max_length=200)
