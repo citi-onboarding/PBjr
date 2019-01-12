@@ -12,10 +12,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import django_heroku
-import dropbox
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
@@ -133,7 +132,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 #Media files
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT  = os.path.join(os.path.dirname(BASE_DIR), 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #Email settings
 TEMPLATED_EMAIL_BACKEND = 'templated_email.backends.vanilla_django.TemplateBackend'
@@ -148,9 +147,4 @@ EMAIL_HOST_USER = ' federacaopbjr.site@gmail.com'
 EMAIL_HOST_PASSWORD = 'federacao@2019'
 
 # Configure Django App for Heroku.
-
 django_heroku.settings(locals())
-
-
-DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-DROPBOX_OAUTH2_TOKEN = 'P-DMhRXchXAAAAAAAAAAC8O1yV4Ta9-DDyyoxfuXMpw-xwHFrMtVzqvipdQkQjML'
