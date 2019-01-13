@@ -134,8 +134,8 @@
     #parceiros .arrows {
         position: unset;
         width: 92px;
-        margin-bottom: 26px;
-        margin-top: -4px;
+        margin-bottom: 32px;
+        margin-top: 12px;
     }
 
     #parceiros .slick-slider { margin-top: 0; }
@@ -349,8 +349,8 @@
 @media(max-width: 380px) {
     .titulo h1 { font-size: 25pt; }
     #parceiros .arrows {
-        margin-top: -10px;
-        margin-bottom: 18px;
+        margin-top: 12px;
+        margin-bottom: 32px;
      }
 }
 
