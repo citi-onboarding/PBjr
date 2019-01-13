@@ -133,8 +133,8 @@
 
     #parceiros .arrows {
         position: unset;
-        width: 83px;
-        margin-bottom: 14px;
+        width: 92px;
+        margin-bottom: 26px;
         margin-top: -4px;
     }
 
@@ -145,7 +145,7 @@
 
 @media(max-width: 742px) {
     #Seta-esquerda img { right: 53%; }
-    #Seta-direita img { right: 41%; }
+    #Seta-direita img { left: 53%; }
 }
 
 @media(max-width: 696px) {
@@ -219,7 +219,7 @@
 
 @media(max-width: 575px) {
     #Seta-direita img {
-        right: 38%;
+        left: 53%;
     }
 }
 
@@ -265,7 +265,7 @@
 
 @media(max-width: 490px) {
     #Seta-direita img {
-        right: 30%;
+        left: 53%;
     }
 }
 
