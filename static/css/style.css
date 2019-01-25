@@ -534,8 +534,7 @@ body {
   position: absolute !important;
   top: 30px !important;
   background: #D7A3A3 !important;
-  /*Ocultando dots temporariamente*/
-  display: none;
+  
 }
 .slick-dots li button::before{
   color: transparent !important;
