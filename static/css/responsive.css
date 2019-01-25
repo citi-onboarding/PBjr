@@ -483,11 +483,13 @@ and (orientation: landscape) {
     .Espaço-título .Título{
         width: 90%;
         font-size: 170%;
+        margin-top: -61px;
     }
     .Espaço-botão .Botão-banner{
         width: 200px;
-        height: 60px;
+        height: 43px;
         font-size: 125%;
+        margin-top: -90px;
     }
 }
 
@@ -524,8 +526,11 @@ and (orientation: landscape) {
         width: 200px;
         height: 60px;
         font-size: 125%;
+        height: 46px;
+        margin-top: -71px;
     }
 }
+
 
 @media screen and (min-width: 735px){
     .Espaço-título .Título{
@@ -560,7 +565,7 @@ and (orientation: landscape) {
     }
     .Espaço-botão .Botão-banner{
         width: 200px;
-        height: 60px;
+        height: 47px;
         font-size: 125%;
     }
 }
@@ -614,18 +619,7 @@ and (orientation: landscape) {
         font-size: 150%;
     }
 }
-@media screen and (min-width: 1440px){
-    .Espaço-título .Título{
-        width: 50%;
-        font-size: 300%;
-    }
-    .Espaço-botão .Botão-banner{
-        width: 270px;
-        height: 60px;
-        top: 350px;
-        font-size: 150%;
-    }
-}
+
 @media screen and (min-width: 1920px){
     .Espaço-título .Título{
         width: 50%;
