@@ -1187,6 +1187,17 @@ footer .segunda-linha .feito p span:last-child img {
   #Modal-SEÇÃO
 \*------------------------------------*/
 
+#modal-secao #fechar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 42px;
+  width: 20px
+}
+
+#modal-secao #fechar img { width: 100%; }
+
 #modal-secao {
   background-color: rgba(1,1,1,0.4);
   padding-bottom: 105px;
