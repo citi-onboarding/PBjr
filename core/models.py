@@ -45,3 +45,36 @@ class EmpresasJuniores(models.Model):
 
     def __str__(self):
         return "Empresa "+str(self.nome)
+
+class MVV(models.Model):
+    missao =  models.TextField("Missão",default="", max_length=200)
+    visao = models.TextField("Visão",default="", max_length=200)
+    valor_1 = models.CharField("Valor(opcional)", blank=True,
+                                  max_length=40)
+    valor_2 = models.CharField("Valor(opcional)", blank=True,
+                                  max_length=40)
+    valor_3 = models.CharField("Valor(opcional)", blank=True,
+                                  max_length=40)
+    valor_4 = models.CharField("Valor(opcional)", blank=True,
+    max_length=40)
+    valor_5 = models.CharField("Valor(opcional)", blank=True,
+                                  max_length=40)
+    valor_6 = models.CharField("Valor(opcional)", blank=True,
+                                  max_length=40)
+    
+    class Meta:
+        verbose_name = "Missão, Visão, Valores"
+        verbose_name_plural = "Missão, Visão, Valores"
+
+    def __str__(self):
+        return "Textos de MVV"
+
+class NossoTime(models.Model):
+    nosso_time = models.TextField("Texto Nosso Time(max 374 caracteres)",default="", max_length=374)
+
+    class Meta:
+        verbose_name = "Texto Nosso Time"
+        verbose_name_plural = "Texto Nosso Time"
+
+    def __str__(self):
+        return "Nosso Time"

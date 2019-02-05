@@ -69,13 +69,10 @@
         
 }
 
-
 @media(max-width: 1020px) {
     .cd-horizontal-timeline .events-content { width: 90%; }
         
 }
-
-
 
 @media(max-width: 970px) {
     .formulario #informacoes-coluna { 
@@ -86,7 +83,7 @@
         width: 100%;
         margin-bottom: 25px;
     }
-    /*#nosso-time { height: 120vh; }*/
+    
 }
 
 @media(max-width: 940px){
@@ -109,6 +106,8 @@
     .coluna-1 { margin-right: 100px; }
 }
 
+
+
 @media(max-width: 850px) {
     #header nav { display: none; }
     #header .menu-movel { display: block; }
@@ -120,6 +119,10 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+@media(max-width: 854px) { 
+    .texto-time { font-size: 16pt; }
 }
 
 @media(max-width: 750px) {
@@ -140,7 +143,6 @@
 
     #parceiros .slick-slider { margin-top: 0; }
 
-    .texto-time { font-size: 18pt; }
 }
 
 @media(max-width: 742px) {
@@ -213,6 +215,7 @@ and (orientation: landscape) {
     #container-chamada .seja-parceiro h2 { font-size: 21pt; }
 }
 
+
 @media(max-width: 596px) {
     .modal {
         width: 456px;
@@ -250,6 +253,8 @@ and (orientation: landscape) {
 
     #modal-secao .info-empresa .info .icone { margin-right: 20px; }
 
+
+
 }
 
 @media(max-width: 500px){
@@ -272,7 +277,7 @@ and (orientation: landscape) {
         text-align: center;
     }
 
-    .texto-time { font-size: 16pt; }
+    .te
 }
 
 @media(max-width: 490px) {
@@ -302,15 +307,19 @@ and (orientation: landscape) {
     }
 }
 
-@media(max-width: 454px){
-    #nosso-time { height: 120vh; }
-    .texto-time { font-size: 14pt; }
+@media(orientation: landscape) and (min-height: 1280px) { 
+    #nosso-time { height: 54vh; }
+}
+
+@media(orientation: portrait) and (max-height: 1024px) { 
+    #nosso-time { height: 71vh; }
 }
 
 @media(orientation: landscape) and (max-height: 450px) {
     .texto-time { 
         margin-top: 0;
         font-size: 12pt; 
+        line-height: 36px;
     }
     .texto-time p {
         margin: 0;
@@ -318,6 +327,12 @@ and (orientation: landscape) {
     #nosso-time .titulo h1 {
         margin: 10px 0;
     } 
+}
+
+
+
+@media(orientation: landscape) and (max-height: 360px) { 
+    #nosso-time { height: 140vh; }
 }
 
 @media(max-width: 446px) {
@@ -354,9 +369,9 @@ and (orientation: landscape) {
         left: 110px;
     }
 
-
-    
 }
+
+
 
 @media(max-width: 380px) {
     .titulo h1 { font-size: 25pt; }
@@ -364,6 +379,9 @@ and (orientation: landscape) {
         margin-top: 12px;
         margin-bottom: 32px;
      }
+     #nosso-time { height: 128vh; }
+
+     .texto-time { margin-top: 34px; }
 }
 
 @media(max-width: 375px) {
@@ -412,10 +430,16 @@ and (orientation: landscape) {
     }
 }
 
+@media(max-width: 320px) {
+    #nosso-time { height: 164vh; }
+    .texto-time { font-size: 14pt; }
+}
+
 
 
 
 /* ------ Medias Banner -------- */
+
 
 @media screen and (min-width: 320px){
     .Espaço-título{

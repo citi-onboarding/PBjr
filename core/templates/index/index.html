@@ -104,6 +104,7 @@
                 <h1>[ Sobre Nós ]</h1>
             </div>
 
+            {% for mvv in mvv %}
             <div class="mvv-empresa">
                 <div class="empresa">
                     <div class="icone">
@@ -114,7 +115,7 @@
                     </div>
                     <div class="mvv"><p>Missão</p></div>
                     <div class="texto-empresa">
-                        <p>Disseminar e desenvolver o MEJ na Paraíba</p>
+                        <p>{{mvv.missao}}</p>
                     </div>
                 </div>
 
@@ -127,7 +128,7 @@
                     </div>
                     <div class="mvv"><p>Visão</p></div>
                     <div class="texto-empresa">
-                        <p>Tornar-se uma Federação de Alto Impacto em 2018</p>
+                        <p>{{mvv.visao}}</p>
                     </div>
                 </div>
 
@@ -141,16 +142,23 @@
                     <div class="mvv"><p>Valores</p></div>
                     <div class="texto-empresa">
                         <ul>
-                            <li><p>Amor pela federação;</p></li>
-                            <li><p>Compromisso com resultados;</p></li>
-                            <li><p>Transparência em todas as ações;</p></li>
-                            <li><p>Colaboratividade para crescermos juntos;</p></li>
-                            <li><p>Resiliência em todas as situações.</p></li>
+                            {% if mvv.valor_1 or mvv.valor_2 or  mvv.valor_3 or  mvv.valor_4 or  mvv.valor_5 or  mvv.valor_6 %}
+                            <li><p>{{mvv.valor_1}}</p></li>
+                            <li><p>{{mvv.valor_2}}</p></li>
+                            <li><p>{{mvv.valor_3}}</p></li>
+                            <li><p>{{mvv.valor_4}}</p></li>
+                            <li><p>{{mvv.valor_5}}</p></li>
+                            <li><p>{{mvv.valor_6}}</p></li>
+                            {% else %}
+                            <li>Nenhum valor registrado</li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
+                {% endfor %}
                
             </div>
+            
 
             <div id="nossa-historia">
                 <div id="borda-listrada"></div>
@@ -185,11 +193,11 @@
             <div class="titulo">
                 <h1>[ Nosso Time ]</h1>
             </div>
+            {% for nossoTime in nossoTime %}
             <div class="texto-time">
-                <p>Somos mais que um time, somos um Carca Time. Nós temos fome de resultados e sede de alto crescimento. Nosso compromisso é com o Brasil, a Paraíba, a sua EJ, com você!
-                 Ser do Carca Time é amar a Paraíba e trabalhar a
-                cada dia por uma federação de Alto Impacto.</p>
+                <p>{{ nossoTime.nosso_time }}"</p>
             </div>
+            {% endfor %}
         </div>
     </section>
     <!-- =======================
