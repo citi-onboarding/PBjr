@@ -71,10 +71,11 @@ class MVV(models.Model):
 
 class NossoTime(models.Model):
     nosso_time = models.TextField("Texto Nosso Time(max 374 caracteres)",default="", max_length=374)
+    imagemTime =  models.ImageField("Imagem do Time", upload_to='time', blank=True)
 
     class Meta:
-        verbose_name = "Texto Nosso Time"
-        verbose_name_plural = "Texto Nosso Time"
+        verbose_name = "Nosso Time"
+        verbose_name_plural = "Nosso Time"
 
     def __str__(self):
         return "Nosso Time"

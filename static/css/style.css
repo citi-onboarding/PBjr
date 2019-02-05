@@ -427,7 +427,6 @@ body {
 #nosso-time {
     padding-top: 40px;
     padding-bottom: 40px;
-    background: linear-gradient(rgba(169, 48, 62, 0.58), rgba(169, 48, 62, 0.58)), url('../imagens/back-time.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;

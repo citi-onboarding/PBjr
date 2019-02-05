@@ -14,10 +14,10 @@ def post_list(request):
     eventos = Evento.objects.all().order_by('dataEvento')
     parceiros = Parceiro.objects.all()
     empresas = EmpresasJuniores.objects.all()
-    mvv = MVV.objects.all()
-    nossoTime = NossoTime.objects.all()
+    mvv = MVV.objects.all()[:1]
+    nossoTime = NossoTime.objects.all()[:1]
     
-    return render(request, 'index/index.html', {'eventos': eventos, 'parceiros':parceiros, 'empresas':empresas, 'mvv':mvv, 'nossoTime':nossoTime })
+    return render(request, 'index/index.html', {'eventos': eventos, 'parceiros':parceiros, 'empresas':empresas, 'mvv':mvv, 'nossoTime':nossoTime})
 
 
 def ContactView(request):

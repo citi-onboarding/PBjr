@@ -187,19 +187,20 @@
     <!-- =======================
 		#Nosso Time
     ========================= -->
-
-    <section id="nosso-time">
+    {% for nossoTime in nossoTime %}
+    <section id="nosso-time" style="background: linear-gradient(rgba(169, 48, 62, 0.58), rgba(169, 48, 62, 0.58)),url('{{nossoTime.imagemTime.url }}')">
         <div class="container">
             <div class="titulo">
                 <h1>[ Nosso Time ]</h1>
             </div>
-            {% for nossoTime in nossoTime %}
+            
             <div class="texto-time">
                 <p>{{ nossoTime.nosso_time }}"</p>
             </div>
-            {% endfor %}
+            
         </div>
     </section>
+    {% endfor %}
     <!-- =======================
         #Carrossel Ej's
     ========================= -->
