@@ -431,11 +431,10 @@ body {
 #nosso-time {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     height: 100vh;
     box-sizing: border-box;
 }
