@@ -92,9 +92,6 @@ body {
   font-size: 28pt;
 }
 
-
-
-
 .menu-mobile {
     background: var(--vermelho);
     height: 100vh;
@@ -103,6 +100,7 @@ body {
     width: 100%;
     z-index: 9;
     overflow: auto;
+
 }
 .menu-mobile nav {
     width: 100%;
@@ -431,7 +429,6 @@ body {
 #nosso-time {
     padding-top: 40px;
     padding-bottom: 40px;
-    background: linear-gradient(rgba(169, 48, 62, 0.58), rgba(169, 48, 62, 0.58)), url('../imagens/back-time.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -440,13 +437,13 @@ body {
 }
 
 #nosso-time .titulo h1, 
-  #nosso-time .texto-time p { color: white; }
+  #nosso-time .texto-time p { color: white; margin: 0; }
 
 .texto-time {
     text-align: center;
     font-size: 20pt;
     letter-spacing: 2px;
-    margin-top: 7%;
+    margin-top: 77px;
     line-height: 40px;
     padding-bottom: 20px;
 }
